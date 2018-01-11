@@ -24,7 +24,7 @@ namespace _2d_array_convert_to_1d
             {
                 for (int j = 0; j < n; j++)
                 {
-                    Console.WriteLine("a[{0}, {1}]=", i, j);
+                    Console.WriteLine("a[{0},{1}]=", i, j);
                     a[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
@@ -45,7 +45,7 @@ namespace _2d_array_convert_to_1d
         public void Convert()
         {
             int k = 0;
-            for (int i = 0, i < m; i++)
+            for (int i = 0; i < m; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
@@ -62,11 +62,17 @@ namespace _2d_array_convert_to_1d
             }
         }
 
-
-
         public static void Main(string[] args)
         {
-            
+            Twodmatrix obj = new Twodmatrix(2, 3);
+            Console.WriteLine("Enter the Elements: ");
+            obj.Readmatrix();
+            Console.WriteLine("\t\t Given 2-D Array(Matrix) is : ");
+            obj.Printd();
+            obj.Convert();
+            Console.WriteLine("\t\t Converted 1-D Array is : ");
+            obj.Printoned();
+            Console.ReadLine();
         }
     }
 }
