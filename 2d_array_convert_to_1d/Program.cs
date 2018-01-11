@@ -54,6 +54,14 @@ namespace _2d_array_convert_to_1d
             }
         }
 
+        public void Printoned()
+        {
+            for (int i = 0; i < m * n; i++)
+            {
+                Console.WriteLine("{0}\t", b[i]);
+            }
+        }
+
 
 
         public static void Main(string[] args)
