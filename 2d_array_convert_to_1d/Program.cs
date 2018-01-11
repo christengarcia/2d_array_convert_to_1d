@@ -30,7 +30,7 @@ namespace _2d_array_convert_to_1d
             }
         }
 
-        public void printd()
+        public void Printd()
         {
             for (int i = 0; i < m; i++)
             {
@@ -39,6 +39,18 @@ namespace _2d_array_convert_to_1d
                     Console.Write("{0}\t", a[i, j]);
                 }
                 Console.Write("\n");
+            }
+        }
+
+        public void Convert()
+        {
+            int k = 0;
+            for (int i = 0, i < m; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    b[k++] = a[i, j];
+                }
             }
         }
 
