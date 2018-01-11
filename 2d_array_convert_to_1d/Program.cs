@@ -18,6 +18,19 @@ namespace _2d_array_convert_to_1d
             b = new int[m * m];
         }
 
+        public void Readmatrix()
+        {
+            for (int i = 0; i < m; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    Console.WriteLine("a[{0}, {1}]=", i, j);
+                    a[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+        }
+
+
 
         public static void Main(string[] args)
         {
